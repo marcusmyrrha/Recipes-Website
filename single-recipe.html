@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Single Recipe</title>
+        <link rel="shortcut icon" href="../Recipes Website - HTML e CSS/Assets/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@200;400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- NAV -->
+        <nav class="navbar">
+            <div class="nav__center">
+                <div class="nav__header">
+                    <a href="index.html" class="nav__logo"><img src="Assets/logo.svg" alt="Simply Recipes"></a>
+                    <button type="button" class="nav__btn btn">
+                        <i  class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+                <div class="nav__links">
+                    <a href="index.html" class="nav__link">Home</a>
+                    <a href="about.html" class="nav__link">About</a>
+                    <a href="tags.html" class="nav__link">Tags</a>
+                    <a href="recipes.html" class="nav__link">Recipes</a>
+                    <div class="nav__link contact__link">
+                        <a href="contact.html" class="btn">Contact</a>
+                    </div>
+                </div>
+            </div>    
+        </nav>
+        <!-- MAIN -->
+        <main class="page">
+            <div class="recipe__page">
+                <section class="recipe__hero">
+                    <img src="Assets/Recipes/recipe-4.jpg" class="img recipe__hero--img" alt="Pancakes">
+                    <article class="recipe__info">
+                        <h2>Banana Pancakes</h2>
+                        <p>
+                            Shabby chic humblebrag banh mi bushwick, banjo kale chips meggings. Cred selfies sartorial, cloud bread disrupt blue bottle seitan. Dreamcatcher tousled bitters, health goth vegan venmo
+                            whatever street art lyft shabby chic pitchfork beard. Drinking vinegar poke tbh, iPhone coloring book polaroid truffaut tousled ramps pug trust fund letterpress. Portland four loko austin
+                            chicharrones bitters single-origin coffee. Leggings letterpress occupy pour-over.
+                        </p>
+                        <!-- RECIPE ICONS -->
+                        <div class="recipe__icons">
+                            <!-- SINGLE RECIPE ICON -->
+                            <article>
+                                <i class="fas fa-clock"></i>
+                                <h5>Prep Time</h5>
+                                <p>30 min.</p>
+                            </article>
+                            <!-- SINGLE RECIPE ICON -->
+                            <article>
+                                <i class="far fa-clock"></i>
+                                <h5>Cook Time</h5>
+                                <p>15 min.</p>
+                            </article>
+                            <!-- SINGLE RECIPE ICON -->
+                            <article>
+                                <i class="fas fa-user-friends"></i>
+                                <h5>Servings</h5>
+                                <p>6 Servings</p>
+                            </article>
+                        </div>
+                        <!-- RECIPE TAGS -->
+                        <div class="recipe__tags">
+                            Tags:
+                            <a href="tag-template.html">milk</a>
+                            <a href="tag-template.html">breakfast</a>
+                            <a href="tag-template.html">pancakes</a>
+                            <a href="tag-template.html">food</a>
+                        </div>
+                    </article>
+                </section>
+                <!-- RECIPE CONTENT -->
+                <section class="recipe__content">
+                    <article>
+                        <h4>Instructions</h4>
+                        <!-- SINGLE INSTRUCTION -->
+                        <div class="single__instruction">
+                            <header>
+                                <p>Step 1</p>
+                                <div></div>
+                            </header>
+                            <p>
+                                I'm baby mustache man braid fingerstache small batch venmo succulents shoreditch.  
+                            </p>
+                        </div>
+                        <!-- SINGLE INSTRUCTION -->
+                        <div class="single__instruction">
+                            <header>
+                                <p>Step 2</p>
+                                <div></div>
+                            </header>
+                            <p>
+                                Pabst pitchfork you probably haven't heard of them, asymmetrical seitan tousled succulents wolf banh mi man bun bespoke selfies freegan ethical hexagon.  
+                            </p>
+                        </div>
+                        <!-- SINGLE INSTRUCTION -->
+                        <div class="single__instruction">
+                            <header>
+                                <p>Step 3</p>
+                                <div></div>
+                            </header>
+                            <p>
+                                Polaroid iPhone bitters chambray. Cornhole swag kombucha live-edge.  
+                            </p>
+                        </div>
+                    </article>
+                    <article class="second__column">
+                        <div>
+                            <h4>Ingredients</h4>
+                            <p class="single__ingredient">1 1/2 cups dry pancake mix</p>
+                            <p class="single__ingredient">1/2 cup flax seed meal</p>
+                            <p class="single__ingredient">1 cup skim milk</p>
+                        </div>
+                        <div>
+                            <h4>Tools</h4>
+                            <p class="single__tool">Hand Blender</p>
+                            <p class="single__tool">Large Heavy Pot With Lid</p>
+                            <p class="single__tool">Meassuring Spoons</p>
+                            <p class="single__tool">Meassuring Cups</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </main>
+        <footer class="page__footer">
+            <p>&copy; <span id="date"></span> <span class="footer__logo">SimplyRecipes</span> Built by <span class="footer__name">Marcus Myrrha</span></p>
+        </footer>
+        <script src="app.js"></script>
+    </body>
+
+</html>
